@@ -12,7 +12,8 @@ int main(){
 return 0;
 }
 
-/*
+/* (what i learnt from this)
+
 in this following project i got wrong logic
 if we consider 2024 as my entry which is leap year actually
 suppose two conditions we are taking :
