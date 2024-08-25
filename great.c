@@ -26,5 +26,5 @@ else if(d>a && d>c && d>b){
 printf("Fourth number is greatest among all four entries");
 }
 
-return 0;
+return 0; 
 }
