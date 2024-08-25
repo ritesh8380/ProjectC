@@ -14,4 +14,4 @@ return 0;
 }
 
 /*it will be better to use alphabets literals for better readability
-i.e if(a>'a' && a<='z')*/
+i.e if(a>'a' && a<='z')*/ 

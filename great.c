@@ -12,18 +12,18 @@ printf("chose 4th number\t");
 scanf("%d", &d);
 
 if(a>b && a>c && a>d){
-printf("a is greatest");
+printf("first number is greatest among four entries");
 }
 else if(b>a && b>c && b>d){
-printf("b is greatest");
+printf("second is greatest among four entries");
 }
 
 else if(c>a && c>b && c>d){
-printf("c is greatest");
+printf("Third is greatest among four entries");
 }
 
 else if(d>a && d>c && d>b){
-printf("d is greatest");
+printf("Fourth is greatest among four entries");
 }
 
 return 0;
