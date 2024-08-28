@@ -1,17 +1,30 @@
 #include <stdio.h>
 int main(){
-    int a, sum,n;
-    a=1;
+    int a,sum,b;
+    b = 1;
     sum = 0;
-    printf("chose till what number you want the sum :  \t");
-    scanf("%d", &n);
-
-    while (a <= n)
-    { 
-        sum+=a;
-        a++;
+    printf("chose till what number you want summation of natural number : \t");
+    scanf("%d", &a);
+    while (b <= a)
+    {   
+        sum += b;
+        b++;
     }
-printf("This is the sum of first 10 natural number %d\n",sum);
-return 0;
 
-} 
+    printf("The summation of first %d natural number is %d\n",a,sum);
+    
+    
+return 0;
+}
+
+/*explaination.
+
+1.iclude everything in stdio.h file
+2.initialisation of the sum varriable and due to natural initialize start as 1
+3.Then took the value from user 
+4.then started while loop whrere b will be added to the sum then value will increase 
+(remember)
+if you try to first increase then summation then your programme will give you ambiguous results.
+if you include printf in the while loop then your print will also execute till loop exit.
+
+*/
