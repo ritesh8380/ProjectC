@@ -25,5 +25,5 @@ note : 1.git add < file name > to add file i.e to stage file from your device.
        2.git rm < file name >  to remove any file from your git repository.
        3.git push origin main is sometimes gives error so just add -f at the last which stands for (forced)
 
-       Imp:dont use forced always because if will bad for your group members who are working upon same repository.
+Imp: dont use forced always because if will bad for your group members who are working upon same repository.
 
