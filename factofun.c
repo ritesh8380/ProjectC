@@ -10,14 +10,28 @@ int facto(int n){   //function definition
     }
 }
 int main(){
+
     int n;
+    char continue_calc = 'y';
+
+    while (continue_calc == 'y' || continue_calc == 'Y'){
+    
     printf("choose whose factorial you want : \t");
     scanf("%d",&n);
     if(n<0){
         printf("sorry factorial for negative numbers is not defined\n");
     }
+    else{
     int result = facto(n);     
      printf("the factorial is %d\n",result);
+    }
+
+     printf("do you want to proceed further y/n \n");
+     scanf(" %c", &continue_calc);
+    
+    }
+
+    printf("thank you to use our factorial calculation programme Have a nice day ! \n");
      return 0;
 }
 
