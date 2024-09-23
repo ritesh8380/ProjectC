@@ -3,10 +3,12 @@
 int main(){
     char source[40];
     char cont[10] = "joke";
-    fgets(source,sizeof(source),stdin);
-    printf("%ld (including spaces)\n",strlen(source)-1);
-    source[strcspn(source, "\n")] = 0; // Remove newline
+    fgets(source,sizeof(source),stdin); //fgets works like scanf function by avoiding buffer overflow issue.
 
+    printf("%ld (including spaces)\n",strlen(source)-1);
+    
+    source[strcspn(source, "\n")] = 0; /*putting strcspn into the string and ask for scanning source and the character then assign ascii value like 84 for T
+    Then the code will scan string and check for character then replace them with the concern ascii cahracter*/
 
     
     /*if someone type Ritesh then string will show 7 instead of 6 because it is printting it in next line*/
