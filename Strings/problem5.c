@@ -1,11 +1,18 @@
 #include <stdio.h>
-#include <string.h>
+void my_strcpy(char arr[], char str[])
+{
+    int i;
+    for (i = 0; arr[i] != '\0'; i++)
+    {
+        str[i] = arr[i];
+    }
+    str[i] = '\0';
+}
 int main(){
-    char arr[40];
-    char str[40];
-    fgets(arr,sizeof(arr),stdin);
-    printf("%s\t(current string)\n",arr);
-    strcpy(str,arr);
-    printf("%s\t (copied string)\n",str);
-return 0;
+    char arr[] = "Harry";
+    char str[20];
+    my_strcpy(arr,str);
+    printf("%s,%s\n",str,arr);
+
+    return 0;
 }
