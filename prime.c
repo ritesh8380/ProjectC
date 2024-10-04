@@ -2,7 +2,7 @@
 int main()
 {
     int number, divisor, is_prime;
-    is_prime = 1;
+    is_prime = 1; //initialization is important for predictable outpts
     printf("Input for prime number test : \t");
     scanf("%d", &number);
 
@@ -11,16 +11,17 @@ int main()
         is_prime = 0;
     }
     else
-    {
-        is_prime = 1;
-        for (int divisor = 2; divisor < number; divisor++)
+    { 
+        for (int divisor = 2; divisor < number; divisor++) 
+        /*we are eliminting 1 from for loop thats why not divisor <= number if
+        if we do this then suppose input is 4 then it will chck for 2,3,4 and as it check for 4 is_prime becomes 0 */
         {
             if (number % divisor == 0)
             {
                 is_prime = 0;
-                break;
+                break; //stop the code here break statement defines this
             }
-        }
+        
     }
 
     if (is_prime)
@@ -33,6 +34,7 @@ int main()
     }
 
 return 0;
+}
 }
 
 /*
